@@ -1,4 +1,5 @@
-Country Explorer 🌍
+# Country Explorer 🌍
+
 Country Explorer est une application web interactive créée avec React, permettant aux utilisateurs de rechercher et filtrer des pays par continent et d’afficher les détails de chaque pays sélectionné.
 
 ## Fonctionnalités
