@@ -1,0 +1,43 @@
+/* CountryCard.css */
+
+.country-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    width: 100%;
+    max-width: 300px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .country-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .country-flag img {
+    width: 80px;
+    height: auto;
+    border-radius: 4px;
+    margin-right: 16px;
+  }
+  
+  .country-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .country-info h3 {
+    margin: 0;
+    font-size: 1.1em;
+    color: #333;
+  }
+  
+  .country-info p {
+    margin: 4px 0;
+    color: #666;
+    font-size: 0.9em;
+  }
+  
