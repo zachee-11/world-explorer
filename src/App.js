@@ -13,7 +13,7 @@ function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(() => {
-    axios.get('https://restcountries.com/v3.1/all')
+    axios.get('https://restcountries.com/v3.1/all?fields=name,continents,flags')
       .then(response => setCountries(response.data))
       .catch(error => console.error('Error fetching countries:', error));
   }, []);
