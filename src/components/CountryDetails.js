@@ -19,8 +19,12 @@ const CountryDetails = ({ country, onClose }) => {
             <p><strong>Languages:</strong> {country.languages ? Object.values(country.languages).join(', ') : 'N/A'}</p>
             <p><strong>Region:</strong> {country.region}</p>
             <p><strong>Subregion:</strong> {country.subregion}</p>
-            <p><strong>Timezones:</strong> {country.timezones.join(', ')}</p>
-            <p><strong>Google Maps:</strong> <a href={country.maps.googleMaps} target="_blank" rel="noopener noreferrer" style={{ color: 'lightblue' }}>View Map</a></p>
+            <p><strong>Timezones:</strong> {Array.isArray(country.timezones) ? country.timezones.join(', ') : 'N/A'}</p>
+           <p><strong>Google Maps:</strong> 
+            {country.maps?.googleMaps 
+              ? <a href={country.maps.googleMaps} target="_blank" rel="noopener noreferrer" style={{ color: 'lightblue' }}>View Map</a> 
+              : 'N/A'}
+          </p>
           </div>
           <div className="modal-footer">
             <button type="button" className="btn btn-secondary" onClick={onClose}>Close</button>
